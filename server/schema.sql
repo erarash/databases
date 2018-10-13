@@ -6,8 +6,8 @@ USE chat;
 CREATE TABLE messages (
   id INT(10) PRIMARY KEY AUTO_INCREMENT,
   msg  VARCHAR(200),
-  roomname VARCHAR(3) 
-  users_id VARCHAR(3),
+  roomname VARCHAR(30), 
+  users_id VARCHAR(30)
 );
 
 -- /* Create other tables and define schemas for them here! */

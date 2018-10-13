@@ -14,7 +14,7 @@ module.exports = {
     //models.messages.post receives param(val), must be provided as an array in sql
     //in controller, we get the data in body aka req.body and it's an obj.
     post: function (req, res) {
-      var val = [req.body[msg] ];
+      var val = [req.body[msg], req.body[users_id], req.body[roomname]];
       models.messages.post(val, (err, results) => {
         if (err) {
           console.error('error occured: ', err);
