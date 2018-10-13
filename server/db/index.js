@@ -1,3 +1,7 @@
+// for ORM integration
+// var Sequelize = require('Sequelize');
+// var orm = new Sequelize('chat', 'student', '');
+
 var mysql = require('mysql');
 
 var db = mysql.createConnection({
@@ -9,11 +13,11 @@ var db = mysql.createConnection({
 
 db.connect();
 
-var getConnection = function(callback) {
-    db.getConnection(function(err, connection) {
-        callback(err, connection);
-    });
-}
+// var getConnection = function(callback) {
+//     db.getConnection(function(err, connection) {
+//         callback(err, connection);
+//     });
+// }
 
 module.exports = db;
 

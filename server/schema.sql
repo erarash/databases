@@ -6,15 +6,15 @@ USE chat;
 CREATE TABLE messages (
   id INT(10) PRIMARY KEY AUTO_INCREMENT,
   msg  VARCHAR(200),
+  roomname VARCHAR(3) 
   users_id VARCHAR(3),
-  rooms_id VARCHAR(3) 
 );
 
 -- /* Create other tables and define schemas for them here! */
-CREATE TABLE rooms(
-  id INT(10) PRIMARY KEY AUTO_INCREMENT,
-  roomname VARCHAR(50)
-);
+-- CREATE TABLE rooms(
+--   id INT(10) PRIMARY KEY AUTO_INCREMENT,
+--   roomname VARCHAR(50)
+-- );
 
 CREATE TABLE users(
   userid INT(10) PRIMARY KEY AUTO_INCREMENT,
